@@ -1,0 +1,2 @@
+position:([]time:`timespan$(); mmsi:`long$(); lat:`float$(); lon:`float$(); heading:`float$(); speed:`float$(); status:`symbol$(); maneuver:`symbol$(); msgtype:`long$(); source:`long$(); sourcets:`timestamp$(); receivets: `timestamp$(); raw:())
+static:([]time:`timespan$(); mmsi:`long$(); shipname:(); callsign:`symbol$(); shiptype:`symbol$(); shipsubtype:`symbol$(); destination:(); msgtype:`long$(); source:`long$(); sourcets:`timestamp$(); receivets: `timestamp$(); raw:())

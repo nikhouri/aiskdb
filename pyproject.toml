@@ -1,0 +1,10 @@
+[project]
+name = "simpletick"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pyais>=2.11.1",
+    "pykx>=3.1.3",
+]

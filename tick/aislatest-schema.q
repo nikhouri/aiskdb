@@ -1,0 +1,1 @@
+latest:([mmsi:`long$()] shipname:(); callsign:`symbol$(); shiptype:`symbol$(); shipsubtype:`symbol$(); lat:`float$(); lon:`float$(); heading:`float$(); speed:`float$(); status:`symbol$(); maneuver:`symbol$(); destination:(); updated:`timestamp$())
