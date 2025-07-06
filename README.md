@@ -29,11 +29,15 @@ The scripts are orchestrated through & require `tmux`. You can connect to the DB
 
 ## Gateway functions
 
-Examples of calling these via q are shown in `aisquery.kxnb`
+The following query functions are available on the gateway:
 
 - `latest[]`  - get latest vessel states
 - `positionHist[mmsi;startTS;endTS]` - get position history for `mmsi` between `startts` and `endts`
 - `staticHist[mmsi;startTS;endTS]` - get static data history for `mmsi` between `startts` and `endts`
+
+Examples of calling these via q are shown in `aisquery.kxnb`, and there is a Jupyter notebook `aisquery.ipynb` with Python examples.
+
+![map.png](map.png)
 
 ## Architecture
 
