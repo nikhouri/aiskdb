@@ -5,11 +5,12 @@ Runs a (simple) kdb+tick to ingest the Norwegian Coastal Administration AIS data
 - Data source: https://www.kystverket.no/en/navigation-and-monitoring/ais/access-to-ais-data/
 - Data license: https://data.norge.no/nlod/en/2.0
 
-The example uses pyais to subscribe to and decode messages from the stream, and PyKX to stream them into a kdb+tick database.
+The example uses pyais to subscribe to and decode messages from the stream, and PyKX to stream them into the database.
 
-- pyais: https://github.com/M0r13n/pyais
-- PyKX: https://docs.kx.com/3.1/PyKX/home.htm
+- KX: https://kx.com
 - kdb+tick: https://github.com/KxSystems/kdb-tick
+- PyKX: https://docs.kx.com/3.1/PyKX/home.htm
+- pyais: https://github.com/M0r13n/pyais
 
 Works on macos & probably Linux.
 
@@ -24,13 +25,15 @@ Two classes of messages are recorded - position reports telling us where the ves
 
 The all of the database processes (and the AIS feed) are started with `startdb.sh` and stopped with `stopdb.sh`
 
-The scripts are orchestrated through & require `tmux`. You can connect to the DB services after startup with `tmux a -t "aiskdb"` 
+The scripts are orchestrated through & require `tmux`. You can connect to the DB services after startup with `tmux a -t "aiskdb"`. `C-b w` will then take you to the overview screen so you can browse through them. 
 
 ## Gateway functions
 
-- latest[]  - get latest vessel states
-- positionHist[mmsi;startTS;endTS] - get position history for `mmsi` between `startts` and `endts`
-- staticHist[mmsi;startTS;endTS] - get static data history for `mmsi` between `startts` and `endts`
+Examples of calling these via q are shown in `aisquery.kxnb`
+
+- `latest[]`  - get latest vessel states
+- `positionHist[mmsi;startTS;endTS]` - get position history for `mmsi` between `startts` and `endts`
+- `staticHist[mmsi;startTS;endTS]` - get static data history for `mmsi` between `startts` and `endts`
 
 ## Architecture
 
