@@ -1,4 +1,4 @@
 .vscode
 .venv
-.db
 .DS_Store
+db
