@@ -48,7 +48,7 @@ tmux send-keys -t $session:$window 'q tick/gw.q -p 5114' C-m
 # AIS feed
 window=7
 tmux new-window -t $session:$window -n 'aisfeed'
-tmux send-keys -t $session:$window 'uv run python3 -i aisfeed.py' C-m
+tmux send-keys -t $session:$window 'uv run python3 -i feed/aisfeed.py' C-m
 
 # Attach to the tmux session
 tmux attach -t $session

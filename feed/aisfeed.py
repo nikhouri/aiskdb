@@ -1,6 +1,9 @@
 from datetime import datetime, timezone
 import threading
 import pyais
+import os
+
+os.environ['PYKX_UNLICENSED'] = '1'
 import pykx as kx
 
 DEBUG = False
