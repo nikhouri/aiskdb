@@ -534,7 +534,7 @@ wheels = [
 
 [[package]]
 name = "pykx"
-version = "3.1.3"
+version = "4.0.0b1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "dill" },
@@ -545,10 +545,10 @@ dependencies = [
     { name = "toml" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/41/81/522a3306c551a94a5fa7ec65aabcb3ca4c6ad814c674e287f8da1094be9e/pykx-3.1.3-cp313-cp313-macosx_10_10_arm64.macosx_11_0_arm64.macosx_12_0_arm64.macosx_13_0_arm64.whl", hash = "sha256:59338529f81350cf061eb59ab191fade9a8eddd0eb55bd7ad3616cf4115734ab", size = 14305264, upload_time = "2025-06-12T18:16:52.619Z" },
-    { url = "https://files.pythonhosted.org/packages/80/7f/43adfebab5837292be671103518e24261abd6f8e778f93cbe5bc6978e92d/pykx-3.1.3-cp313-cp313-manylinux2014_aarch64.whl", hash = "sha256:9b35b23cc71b3e883ed9d280cd398dee8396ca7bc258b25859e7287a9caf9f95", size = 17767527, upload_time = "2025-06-12T18:16:54.653Z" },
-    { url = "https://files.pythonhosted.org/packages/ba/87/307cddeafee802ad1d868f953ce31d94fd2d47d41fff848781aaff02f540/pykx-3.1.3-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f3a74177ca42d08a4a05567391c3e08cb121f171ad0e72ec771baf5d3efe4edf", size = 18293861, upload_time = "2025-06-12T18:16:56.967Z" },
-    { url = "https://files.pythonhosted.org/packages/fd/b8/d8a82755d7fffe0d20f426d5a8c6c31500677f811ef9ca6c3b82beb2c153/pykx-3.1.3-cp313-cp313-win_amd64.whl", hash = "sha256:f38e4535059f7c06de7196571d2fa53210820e516f064c21e7ef6d87df8417bf", size = 14269280, upload_time = "2025-06-12T18:16:58.771Z" },
+    { url = "https://files.pythonhosted.org/packages/dd/23/09b55c10f6c840f388f7c972f8e9928c8dc4a9ec67c0be0077ddeac1a2a7/pykx-4.0.0b1-cp313-cp313-macosx_10_10_arm64.macosx_11_0_arm64.macosx_12_0_arm64.macosx_13_0_arm64.whl", hash = "sha256:8413cd3b8dc3ef0623bbf80de6980cffbf20a5b99a1fd08c11ff46384a2aceb4", size = 21738640, upload_time = "2025-07-02T13:41:15.644Z" },
+    { url = "https://files.pythonhosted.org/packages/98/15/25c371dd800271edbad43d258b95f134d087e34449b2e13404afe46705e4/pykx-4.0.0b1-cp313-cp313-manylinux2014_aarch64.whl", hash = "sha256:a3f92253c51faff0472e9642723b946d310b042cbf48d1df5a5e7d0bc050ed64", size = 25173641, upload_time = "2025-07-02T13:41:17.565Z" },
+    { url = "https://files.pythonhosted.org/packages/af/94/688bfd1064bc0b3e2b1ed1dc038faeca5f3be77fd08659df8c7d062196f4/pykx-4.0.0b1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2aa305f27be8da12b14b4112b5a6f4a9ff18aca2b6a5b8c31becfe4fe45c1a42", size = 25701638, upload_time = "2025-07-02T13:41:19.758Z" },
+    { url = "https://files.pythonhosted.org/packages/e4/89/25399800c4934719719a46012f9c7100494bb577b82d2bc16d465bb41838/pykx-4.0.0b1-cp313-cp313-win_amd64.whl", hash = "sha256:3eb56147b4c0d4f894c2cd0895abe3ddf92f45c63dac6aad29e8311d12b57fbb", size = 21702673, upload_time = "2025-07-02T13:41:21.859Z" },
 ]
 
 [[package]]
@@ -643,7 +643,7 @@ requires-dist = [
     { name = "folium", specifier = ">=0.20.0" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "pyais", specifier = ">=2.11.1" },
-    { name = "pykx", specifier = ">=3.1.3" },
+    { name = "pykx", specifier = "==4.0.0b1" },
 ]
 
 [[package]]
