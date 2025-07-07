@@ -37,7 +37,8 @@ The following query functions are available on the gateway:
 
 Examples of calling these via q are shown in `aisquery.kxnb`, and there is a Jupyter notebook `aisquery.ipynb` with Python examples.
 
-![map.png](map.png)
+![Map of ships around Norway](map.png)
+![Map with a path of a fishing vessel](path.png)
 
 ## Architecture
 
