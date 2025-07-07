@@ -1,0 +1,3 @@
+* text=auto
+*.ipynb linguist-detectable=false
+*.kxnb linguist-detectable=false
