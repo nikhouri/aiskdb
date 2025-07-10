@@ -20,10 +20,10 @@ window=1
 tmux new-window -t $session:$window -n 'hdb'
 tmux send-keys -t $session:$window 'q tick/hdb.q db/aiskdb -p 5012' C-m
 
-# RDB
+# WDB
 window=2
-tmux new-window -t $session:$window -n 'rdb'
-tmux send-keys -t $session:$window 'q tick/rdb.q :5010 :5012 -p 5011' C-m
+tmux new-window -t $session:$window -n 'wdb'
+tmux send-keys -t $session:$window 'q tick/w.q :5010 :5012 -p 5011' C-m
 
 # Chained tickerplant
 window=3
@@ -33,7 +33,7 @@ tmux send-keys -t $session:$window 'q tick/chainedtick.q :5010 -p 5110 -t 1000' 
 # Chained RDB
 window=4
 tmux new-window -t $session:$window -n 'chainedrdb'
-tmux send-keys -t $session:$window 'q tick/chainedrdb.q :5110 -p 5111' C-m
+tmux send-keys -t $session:$window 'q tick/chainedr.q :5110 -p 5111' C-m
 
 # RTE
 window=5

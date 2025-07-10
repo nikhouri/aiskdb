@@ -1,13 +1,12 @@
-# kdb+tick for AIS capture
+# Simple kdb+tick for AIS capture
 
-Runs a (simple) kdb+tick to ingest the Norwegian Coastal Administration AIS data, which is a live stream of AIS data from ships around Norway.
+Runs a (simple, not production grade) kdb+tick to ingest the Norwegian Coastal Administration AIS data, which is a live stream of AIS data from ships around Norway.
 
 - Data source: https://www.kystverket.no/en/navigation-and-monitoring/ais/access-to-ais-data/
 - Data license: https://data.norge.no/nlod/en/2.0
 
 The example uses pyais to subscribe to and decode messages from the stream, and PyKX to stream them into the database.
 
-- KX: https://kx.com
 - kdb+tick: https://github.com/KxSystems/kdb-tick
 - PyKX: https://docs.kx.com/3.1/PyKX/home.htm
 - pyais: https://github.com/M0r13n/pyais
@@ -45,7 +44,18 @@ Examples of calling these via q are shown in `aisquery.kxnb`, and there is a Jup
 - kdb+ Architecture Course: https://academy.kx.com/courses/kdb-architecture/
 - kdb+ Architecture Course git repo: https://github.com/KxSystems/kdb-architecture-course
 - kdb+ Streaming Architecture: https://code.kx.com/q/architecture/
-- Chained tickerplants & RDBs: https://code.kx.com/q/kb/kdb-tick/
+- Chained tickerplants, chained RDBs, write-only RDB: https://code.kx.com/q/kb/kdb-tick/
 - RTEs: https://code.kx.com/q/wp/rt-tick/
 
-![kdb+tick architecture diagram](architecture.drawio.png)
+![kdb+tick architecture diagram](images/architecture.drawio.png)
+
+## Attribution
+
+Uses source from the following repositories:
+
+- `tick.q` `u.q` `r.q` from https://github.com/KxSystems/kdb-tick 
+- `chainedtick.q` `chainedr.q` from https://github.com/KxSystems/kdb ([LICENSE](https://github.com/KxSystems/kdb/blob/master/LICENSE))
+- `hdb.q` `gw.q` `rte.q` from https://github.com/KxSystems/kdb-architecture-course
+- `w.q` from https://github.com/simongarland/tick 
+
+Changes made to the above are mostly around grouping on `mmsi` instead of `sym`.
